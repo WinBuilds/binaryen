@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="passes">
+      <UniqueIdentifier>{5fe51dbc-f45d-42b1-b375-49a7a8e704e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{27ea880a-d5b9-4818-a246-d30929e5153c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ir">
+      <UniqueIdentifier>{1ab5b929-67f9-40ef-ae0e-43d7ea746fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asmjs">
+      <UniqueIdentifier>{b6d2be98-748b-4168-8d42-774b3987d2da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wasm">
+      <UniqueIdentifier>{aec15854-e093-4f62-aa18-050b302309be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cfg">
+      <UniqueIdentifier>{c1d763d4-a691-4109-82db-c40a23061786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="optimizer">
+      <UniqueIdentifier>{2690f783-d016-44de-8fd5-36bbc03de0e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\ir\abstract.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\bits.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\block-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\branch-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\cost.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\count.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\effects.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\equivalent_sets.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\find_all.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\function-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\global-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\hashed.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\import-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\iteration.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\label-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\literal-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\load-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\local-graph.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\localize.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\manipulation.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\memory-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\module-utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\names.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\properties.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\trapping.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\type-updating.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ir\utils.h">
+      <Filter>ir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asmjs\asmangle.h">
+      <Filter>asmjs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asmjs\shared-constants.h">
+      <Filter>asmjs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cfg\cfg-traversal.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cfg\liveness-traversal.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cfg\Relooper.h">
+      <Filter>cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\emscripten-optimizer\istring.h">
+      <Filter>optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\emscripten-optimizer\optimizer.h">
+      <Filter>optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\emscripten-optimizer\parser.h">
+      <Filter>optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\emscripten-optimizer\simple_ast.h">
+      <Filter>optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\emscripten-optimizer\snprintf.h">
+      <Filter>optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\archive.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\bits.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\colors.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\command-line.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\file.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\hash.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\json.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\learning.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\name.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\path.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\permutations.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\safe_integer.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\sorted_vector.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\threads.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\timing.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\unique_deferring_queue.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\support\utilities.h">
+      <Filter>support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\passes\intrinsics-module.h">
+      <Filter>passes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\passes\passes.h">
+      <Filter>passes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\abi\abi.h" />
+    <ClInclude Include="..\..\src\abi\stack.h" />
+    <ClInclude Include="..\..\src\abi\wasm-object.h" />
+    <ClInclude Include="..\..\src\asm_v_wasm.h" />
+    <ClInclude Include="..\..\src\asm2wasm.h" />
+    <ClInclude Include="..\..\src\binaryen-c.h" />
+    <ClInclude Include="..\..\src\compiler-support.h" />
+    <ClInclude Include="..\..\src\literal.h" />
+    <ClInclude Include="..\..\src\mixed_arena.h" />
+    <ClInclude Include="..\..\src\parsing.h" />
+    <ClInclude Include="..\..\src\pass.h" />
+    <ClInclude Include="..\..\src\pretty_printing.h" />
+    <ClInclude Include="..\..\src\shared-constants.h" />
+    <ClInclude Include="..\..\src\shell-interface.h" />
+    <ClInclude Include="..\..\src\wasm.h" />
+    <ClInclude Include="..\..\src\wasm2asm.h" />
+    <ClInclude Include="..\..\src\wasm-binary.h" />
+    <ClInclude Include="..\..\src\wasm-builder.h" />
+    <ClInclude Include="..\..\src\wasm-emscripten.h" />
+    <ClInclude Include="..\..\src\wasm-interpreter.h" />
+    <ClInclude Include="..\..\src\wasm-io.h" />
+    <ClInclude Include="..\..\src\wasm-module-building.h" />
+    <ClInclude Include="..\..\src\wasm-printing.h" />
+    <ClInclude Include="..\..\src\wasm-s-parser.h" />
+    <ClInclude Include="..\..\src\wasm-stack.h" />
+    <ClInclude Include="..\..\src\wasm-traversal.h" />
+    <ClInclude Include="..\..\src\wasm-type.h" />
+    <ClInclude Include="..\..\src\wasm-validator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\src\support\CMakeLists.txt">
+      <Filter>support</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ir\ExpressionAnalyzer.cpp">
+      <Filter>ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ir\ExpressionManipulator.cpp">
+      <Filter>ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ir\LocalGraph.cpp">
+      <Filter>ir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asmjs\asm_v_wasm.cpp">
+      <Filter>asmjs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asmjs\asmangle.cpp">
+      <Filter>asmjs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asmjs\shared-constants.cpp">
+      <Filter>asmjs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cfg\Relooper.cpp">
+      <Filter>cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\emscripten-optimizer\optimizer-shared.cpp">
+      <Filter>optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\emscripten-optimizer\parser.cpp">
+      <Filter>optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\emscripten-optimizer\simple_ast.cpp">
+      <Filter>optimizer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\literal.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-binary.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-emscripten.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-interpreter.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-io.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-s-parser.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-type.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wasm\wasm-validator.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\archive.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\bits.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\colors.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\command-line.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\file.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\path.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\safe_integer.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\support\threads.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\CoalesceLocals.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\CodeFolding.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\CodePushing.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\ConstHoisting.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\DeadCodeElimination.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\DuplicateFunctionElimination.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\ExtractFunction.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Flatten.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\FuncCastEmulation.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\I64ToI32Lowering.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Inlining.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\InstrumentLocals.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\InstrumentMemory.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\LegalizeJSInterface.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\LocalCSE.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\LogExecution.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\MemoryPacking.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\MergeBlocks.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\MergeLocals.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Metrics.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\NameList.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\OptimizeInstructions.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\pass.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\PickLoadSigns.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\PostEmscripten.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Precompute.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Print.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\PrintCallGraph.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RedundantSetElimination.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RelooperJumpThreading.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveImports.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveMemory.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveNonJSOps.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveUnusedBrs.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveUnusedModuleElements.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\RemoveUnusedNames.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\ReorderFunctions.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\ReorderLocals.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\ReReloop.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\SafeHeap.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\SimplifyLocals.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\SpillPointers.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\SSAify.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\StackIR.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\TrapMode.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Untee.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\passes\Vacuum.cpp">
+      <Filter>passes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\binaryen-c.cpp" />
+    <ClCompile Include="..\..\src\passes\WasmIntrinsics.cpp" />
+  </ItemGroup>
+</Project>

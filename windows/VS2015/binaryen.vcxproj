@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\abi\abi.h" />
+    <ClInclude Include="..\..\src\abi\stack.h" />
+    <ClInclude Include="..\..\src\abi\wasm-object.h" />
+    <ClInclude Include="..\..\src\asm2wasm.h" />
+    <ClInclude Include="..\..\src\asmjs\asmangle.h" />
+    <ClInclude Include="..\..\src\asmjs\shared-constants.h" />
+    <ClInclude Include="..\..\src\asm_v_wasm.h" />
+    <ClInclude Include="..\..\src\binaryen-c.h" />
+    <ClInclude Include="..\..\src\cfg\cfg-traversal.h" />
+    <ClInclude Include="..\..\src\cfg\liveness-traversal.h" />
+    <ClInclude Include="..\..\src\cfg\Relooper.h" />
+    <ClInclude Include="..\..\src\compiler-support.h" />
+    <ClInclude Include="..\..\src\emscripten-optimizer\istring.h" />
+    <ClInclude Include="..\..\src\emscripten-optimizer\optimizer.h" />
+    <ClInclude Include="..\..\src\emscripten-optimizer\parser.h" />
+    <ClInclude Include="..\..\src\emscripten-optimizer\simple_ast.h" />
+    <ClInclude Include="..\..\src\emscripten-optimizer\snprintf.h" />
+    <ClInclude Include="..\..\src\ir\abstract.h" />
+    <ClInclude Include="..\..\src\ir\bits.h" />
+    <ClInclude Include="..\..\src\ir\block-utils.h" />
+    <ClInclude Include="..\..\src\ir\branch-utils.h" />
+    <ClInclude Include="..\..\src\ir\cost.h" />
+    <ClInclude Include="..\..\src\ir\count.h" />
+    <ClInclude Include="..\..\src\ir\effects.h" />
+    <ClInclude Include="..\..\src\ir\equivalent_sets.h" />
+    <ClInclude Include="..\..\src\ir\find_all.h" />
+    <ClInclude Include="..\..\src\ir\function-utils.h" />
+    <ClInclude Include="..\..\src\ir\global-utils.h" />
+    <ClInclude Include="..\..\src\ir\hashed.h" />
+    <ClInclude Include="..\..\src\ir\import-utils.h" />
+    <ClInclude Include="..\..\src\ir\iteration.h" />
+    <ClInclude Include="..\..\src\ir\label-utils.h" />
+    <ClInclude Include="..\..\src\ir\literal-utils.h" />
+    <ClInclude Include="..\..\src\ir\load-utils.h" />
+    <ClInclude Include="..\..\src\ir\local-graph.h" />
+    <ClInclude Include="..\..\src\ir\localize.h" />
+    <ClInclude Include="..\..\src\ir\manipulation.h" />
+    <ClInclude Include="..\..\src\ir\memory-utils.h" />
+    <ClInclude Include="..\..\src\ir\module-utils.h" />
+    <ClInclude Include="..\..\src\ir\names.h" />
+    <ClInclude Include="..\..\src\ir\properties.h" />
+    <ClInclude Include="..\..\src\ir\trapping.h" />
+    <ClInclude Include="..\..\src\ir\type-updating.h" />
+    <ClInclude Include="..\..\src\ir\utils.h" />
+    <ClInclude Include="..\..\src\literal.h" />
+    <ClInclude Include="..\..\src\mixed_arena.h" />
+    <ClInclude Include="..\..\src\parsing.h" />
+    <ClInclude Include="..\..\src\pass.h" />
+    <ClInclude Include="..\..\src\passes\intrinsics-module.h" />
+    <ClInclude Include="..\..\src\passes\passes.h" />
+    <ClInclude Include="..\..\src\pretty_printing.h" />
+    <ClInclude Include="..\..\src\shared-constants.h" />
+    <ClInclude Include="..\..\src\shell-interface.h" />
+    <ClInclude Include="..\..\src\support\archive.h" />
+    <ClInclude Include="..\..\src\support\bits.h" />
+    <ClInclude Include="..\..\src\support\colors.h" />
+    <ClInclude Include="..\..\src\support\command-line.h" />
+    <ClInclude Include="..\..\src\support\file.h" />
+    <ClInclude Include="..\..\src\support\hash.h" />
+    <ClInclude Include="..\..\src\support\json.h" />
+    <ClInclude Include="..\..\src\support\learning.h" />
+    <ClInclude Include="..\..\src\support\name.h" />
+    <ClInclude Include="..\..\src\support\path.h" />
+    <ClInclude Include="..\..\src\support\permutations.h" />
+    <ClInclude Include="..\..\src\support\safe_integer.h" />
+    <ClInclude Include="..\..\src\support\sorted_vector.h" />
+    <ClInclude Include="..\..\src\support\threads.h" />
+    <ClInclude Include="..\..\src\support\timing.h" />
+    <ClInclude Include="..\..\src\support\unique_deferring_queue.h" />
+    <ClInclude Include="..\..\src\support\utilities.h" />
+    <ClInclude Include="..\..\src\wasm-binary.h" />
+    <ClInclude Include="..\..\src\wasm-builder.h" />
+    <ClInclude Include="..\..\src\wasm-emscripten.h" />
+    <ClInclude Include="..\..\src\wasm-interpreter.h" />
+    <ClInclude Include="..\..\src\wasm-io.h" />
+    <ClInclude Include="..\..\src\wasm-module-building.h" />
+    <ClInclude Include="..\..\src\wasm-printing.h" />
+    <ClInclude Include="..\..\src\wasm-s-parser.h" />
+    <ClInclude Include="..\..\src\wasm-stack.h" />
+    <ClInclude Include="..\..\src\wasm-traversal.h" />
+    <ClInclude Include="..\..\src\wasm-type.h" />
+    <ClInclude Include="..\..\src\wasm-validator.h" />
+    <ClInclude Include="..\..\src\wasm.h" />
+    <ClInclude Include="..\..\src\wasm2asm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\asmjs\asmangle.cpp" />
+    <ClCompile Include="..\..\src\asmjs\asm_v_wasm.cpp" />
+    <ClCompile Include="..\..\src\asmjs\shared-constants.cpp" />
+    <ClCompile Include="..\..\src\binaryen-c.cpp" />
+    <ClCompile Include="..\..\src\cfg\Relooper.cpp" />
+    <ClCompile Include="..\..\src\emscripten-optimizer\optimizer-shared.cpp" />
+    <ClCompile Include="..\..\src\emscripten-optimizer\parser.cpp" />
+    <ClCompile Include="..\..\src\emscripten-optimizer\simple_ast.cpp" />
+    <ClCompile Include="..\..\src\ir\ExpressionAnalyzer.cpp" />
+    <ClCompile Include="..\..\src\ir\ExpressionManipulator.cpp" />
+    <ClCompile Include="..\..\src\ir\LocalGraph.cpp" />
+    <ClCompile Include="..\..\src\passes\CoalesceLocals.cpp" />
+    <ClCompile Include="..\..\src\passes\CodeFolding.cpp" />
+    <ClCompile Include="..\..\src\passes\CodePushing.cpp" />
+    <ClCompile Include="..\..\src\passes\ConstHoisting.cpp" />
+    <ClCompile Include="..\..\src\passes\DeadCodeElimination.cpp" />
+    <ClCompile Include="..\..\src\passes\DuplicateFunctionElimination.cpp" />
+    <ClCompile Include="..\..\src\passes\ExtractFunction.cpp" />
+    <ClCompile Include="..\..\src\passes\Flatten.cpp" />
+    <ClCompile Include="..\..\src\passes\FuncCastEmulation.cpp" />
+    <ClCompile Include="..\..\src\passes\I64ToI32Lowering.cpp" />
+    <ClCompile Include="..\..\src\passes\Inlining.cpp" />
+    <ClCompile Include="..\..\src\passes\InstrumentLocals.cpp" />
+    <ClCompile Include="..\..\src\passes\InstrumentMemory.cpp" />
+    <ClCompile Include="..\..\src\passes\LegalizeJSInterface.cpp" />
+    <ClCompile Include="..\..\src\passes\LocalCSE.cpp" />
+    <ClCompile Include="..\..\src\passes\LogExecution.cpp" />
+    <ClCompile Include="..\..\src\passes\MemoryPacking.cpp" />
+    <ClCompile Include="..\..\src\passes\MergeBlocks.cpp" />
+    <ClCompile Include="..\..\src\passes\MergeLocals.cpp" />
+    <ClCompile Include="..\..\src\passes\Metrics.cpp" />
+    <ClCompile Include="..\..\src\passes\NameList.cpp" />
+    <ClCompile Include="..\..\src\passes\OptimizeInstructions.cpp" />
+    <ClCompile Include="..\..\src\passes\pass.cpp" />
+    <ClCompile Include="..\..\src\passes\PickLoadSigns.cpp" />
+    <ClCompile Include="..\..\src\passes\PostEmscripten.cpp" />
+    <ClCompile Include="..\..\src\passes\Precompute.cpp" />
+    <ClCompile Include="..\..\src\passes\Print.cpp" />
+    <ClCompile Include="..\..\src\passes\PrintCallGraph.cpp" />
+    <ClCompile Include="..\..\src\passes\RedundantSetElimination.cpp" />
+    <ClCompile Include="..\..\src\passes\RelooperJumpThreading.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveImports.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveMemory.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveNonJSOps.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveUnusedBrs.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveUnusedModuleElements.cpp" />
+    <ClCompile Include="..\..\src\passes\RemoveUnusedNames.cpp" />
+    <ClCompile Include="..\..\src\passes\ReorderFunctions.cpp" />
+    <ClCompile Include="..\..\src\passes\ReorderLocals.cpp" />
+    <ClCompile Include="..\..\src\passes\ReReloop.cpp" />
+    <ClCompile Include="..\..\src\passes\SafeHeap.cpp" />
+    <ClCompile Include="..\..\src\passes\SimplifyLocals.cpp" />
+    <ClCompile Include="..\..\src\passes\SpillPointers.cpp" />
+    <ClCompile Include="..\..\src\passes\SSAify.cpp" />
+    <ClCompile Include="..\..\src\passes\StackIR.cpp" />
+    <ClCompile Include="..\..\src\passes\TrapMode.cpp" />
+    <ClCompile Include="..\..\src\passes\Untee.cpp" />
+    <ClCompile Include="..\..\src\passes\Vacuum.cpp" />
+    <ClCompile Include="..\..\src\passes\WasmIntrinsics.cpp" />
+    <ClCompile Include="..\..\src\support\archive.cpp" />
+    <ClCompile Include="..\..\src\support\bits.cpp" />
+    <ClCompile Include="..\..\src\support\colors.cpp" />
+    <ClCompile Include="..\..\src\support\command-line.cpp" />
+    <ClCompile Include="..\..\src\support\file.cpp" />
+    <ClCompile Include="..\..\src\support\path.cpp" />
+    <ClCompile Include="..\..\src\support\safe_integer.cpp" />
+    <ClCompile Include="..\..\src\support\threads.cpp" />
+    <ClCompile Include="..\..\src\wasm\literal.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-binary.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-emscripten.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-interpreter.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-io.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-s-parser.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-type.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm-validator.cpp" />
+    <ClCompile Include="..\..\src\wasm\wasm.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B8D3044B-E3F5-490F-8282-470A4902C389}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>binaryen</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>binaryenlib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PreBuildEvent>
+      <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

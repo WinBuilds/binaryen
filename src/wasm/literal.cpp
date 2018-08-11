@@ -278,8 +278,8 @@ Literal Literal::eqz() const {
 
 Literal Literal::neg() const {
   switch (type) {
-    case Type::i32: return Literal(-uint32_t(i32));
-    case Type::i64: return Literal(-uint64_t(i64));
+    case Type::i32: return Literal(0-uint32_t(i32));
+    case Type::i64: return Literal(0-uint64_t(i64));
     case Type::f32: return Literal(i32 ^ 0x80000000).castToF32();
     case Type::f64: return Literal(int64_t(i64 ^ 0x8000000000000000ULL)).castToF64();
     default: WASM_UNREACHABLE();

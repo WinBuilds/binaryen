@@ -268,6 +268,13 @@
     <PreBuildEvent>
       <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen"
+xcopy "$(SolutionDir)..\..\src\*.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen\" /E /I /R /Y /D</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying include header files..</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -287,6 +294,13 @@
     <PreBuildEvent>
       <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen"
+xcopy "$(SolutionDir)..\..\src\*.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen\" /E /I /R /Y /D</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying include header files..</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -310,6 +324,13 @@
     <PreBuildEvent>
       <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen"
+xcopy "$(SolutionDir)..\..\src\*.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen\" /E /I /R /Y /D</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying include header files..</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -333,6 +354,13 @@
     <PreBuildEvent>
       <Command>python "$(SolutionDir)..\..\scripts\embedwast.py" "$(SolutionDir)..\..\src\passes\wasm-intrinsics.wast" "$(SolutionDir)..\..\src\passes\WasmIntrinsics.cpp"</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen"
+xcopy "$(SolutionDir)..\..\src\*.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\binaryen\" /E /I /R /Y /D</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying include header files..</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,6 +2,24 @@
 
 namespace wasm {
 
+Flow::Flow() {
+}
+
+Flow::Flow(Literal value) : value(value) {
+}
+
+Flow::Flow(Name breakTo) : breakTo(breakTo) {
+}
+
+bool Flow::breaking() { 
+   return breakTo.is(); 
+}
+
+void Flow::clearIf(Name target) {
+   if (breakTo == target) 
+         breakTo.clear();
+}
+
 #ifdef WASM_INTERPRETER_DEBUG
 int Indenter::indentLevel = 0;
 

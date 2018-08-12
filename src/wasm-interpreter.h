@@ -52,25 +52,21 @@ enum {
 // Stuff that flows around during executing expressions: a literal, or a change in control flow.
 class Flow {
 public:
-  Flow() {}
-  Flow(Literal value) : value(value) {}
-  Flow(Name breakTo) : breakTo(breakTo) {}
+   Flow();
+   Flow(Literal value);
+   Flow(Name breakTo);
 
-  Literal value;
-  Name breakTo; // if non-null, a break is going on
+   Literal value;
+   Name breakTo; // if non-null, a break is going on
 
-  bool breaking() { return breakTo.is(); }
+   bool breaking();
 
-  void clearIf(Name target) {
-    if (breakTo == target) {
-      breakTo.clear();
-    }
-  }
+   void clearIf(Name target);
 
-  friend std::ostream& operator<<(std::ostream& o, Flow& flow) {
-    o << "(flow " << (flow.breakTo.is() ? flow.breakTo.str : "-") << " : " << flow.value << ')';
-    return o;
-  }
+   friend std::ostream& operator<<(std::ostream& o, Flow& flow) {
+      o << "(flow " << (flow.breakTo.is() ? flow.breakTo.str : "-") << " : " << flow.value << ')';
+      return o;
+   }
 };
 
 // A list of literals, for function calls

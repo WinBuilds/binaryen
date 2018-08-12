@@ -22,7 +22,6 @@
     <ClInclude Include="..\..\src\abi\abi.h" />
     <ClInclude Include="..\..\src\abi\stack.h" />
     <ClInclude Include="..\..\src\abi\wasm-object.h" />
-    <ClInclude Include="..\..\src\asm2wasm.h" />
     <ClInclude Include="..\..\src\asmjs\asmangle.h" />
     <ClInclude Include="..\..\src\asmjs\shared-constants.h" />
     <ClInclude Include="..\..\src\asm_v_wasm.h" />
@@ -262,7 +261,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BINARYEN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BINARYEN_EXPORTS;WASM_INTERPRETER_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>
@@ -278,7 +277,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;BINARYEN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;BINARYEN_EXPORTS;WASM_INTERPRETER_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(SolutionDir)..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4267;4996</DisableSpecificWarnings>

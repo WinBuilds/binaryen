@@ -194,32 +194,65 @@
     </ClInclude>
     <ClInclude Include="..\..\src\abi\abi.h" />
     <ClInclude Include="..\..\src\abi\stack.h" />
-    <ClInclude Include="..\..\src\abi\wasm-object.h" />
-    <ClInclude Include="..\..\src\asm_v_wasm.h" />
-    <ClInclude Include="..\..\src\asm2wasm.h" />
     <ClInclude Include="..\..\src\binaryen-c.h" />
     <ClInclude Include="..\..\src\compiler-support.h" />
-    <ClInclude Include="..\..\src\literal.h" />
     <ClInclude Include="..\..\src\mixed_arena.h" />
     <ClInclude Include="..\..\src\parsing.h" />
     <ClInclude Include="..\..\src\pass.h" />
     <ClInclude Include="..\..\src\pretty_printing.h" />
     <ClInclude Include="..\..\src\shared-constants.h" />
     <ClInclude Include="..\..\src\shell-interface.h" />
-    <ClInclude Include="..\..\src\wasm.h" />
-    <ClInclude Include="..\..\src\wasm2asm.h" />
-    <ClInclude Include="..\..\src\wasm-binary.h" />
-    <ClInclude Include="..\..\src\wasm-builder.h" />
-    <ClInclude Include="..\..\src\wasm-emscripten.h" />
-    <ClInclude Include="..\..\src\wasm-interpreter.h" />
-    <ClInclude Include="..\..\src\wasm-io.h" />
-    <ClInclude Include="..\..\src\wasm-module-building.h" />
-    <ClInclude Include="..\..\src\wasm-printing.h" />
-    <ClInclude Include="..\..\src\wasm-s-parser.h" />
-    <ClInclude Include="..\..\src\wasm-stack.h" />
-    <ClInclude Include="..\..\src\wasm-traversal.h" />
-    <ClInclude Include="..\..\src\wasm-type.h" />
-    <ClInclude Include="..\..\src\wasm-validator.h" />
+    <ClInclude Include="..\..\src\wasm-interpreter.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-binary.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm2asm.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-builder.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-emscripten.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-io.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-module-building.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\abi\wasm-object.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-printing.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-s-parser.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-stack.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-traversal.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-type.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wasm-validator.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\literal.h">
+      <Filter>wasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asm_v_wasm.h">
+      <Filter>asmjs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\src\support\CMakeLists.txt">
@@ -450,6 +483,8 @@
       <Filter>passes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\binaryen-c.cpp" />
-    <ClCompile Include="..\..\src\passes\WasmIntrinsics.cpp" />
+    <ClCompile Include="..\..\src\passes\WasmIntrinsics.cpp">
+      <Filter>wasm</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
